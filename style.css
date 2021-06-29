@@ -70,6 +70,7 @@ h3 {
 
 #btn{
     margin-left: 20px;
+    /* display: none; */
 }
 
 .card img{
@@ -86,7 +87,10 @@ h3 {
      }
     }
 }
-
+li a{
+    text-decoration: none;
+    color:#989c9e;
+}
 
 
 
