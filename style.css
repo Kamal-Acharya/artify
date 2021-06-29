@@ -1,0 +1,96 @@
+
+@media  (min-width:1500px) {
+     .carousel-inner img{
+    /* height: 100vh; */
+ } 
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+@media  (max-width:500px) {
+ .box{
+     flex-direction: column;
+     margin-left: 50px;
+ }
+
+
+}
+
+.navbar img{
+height: 49px;
+width: 121px
+}
+h2{
+    text-align: center
+}
+.card{
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+.con {
+    overflow: hidden;
+    margin-top: 250px;
+    background: #262626;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.bold-text {
+    color: #989c9e !important
+}
+
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+#btn{
+    margin-left: 20px;
+}
+
+.card img{
+    height: 340px;
+}
+
+
+.card:hover {
+    /* background-color: blue; */
+
+    @keyframes example {
+     0%{
+
+     }
+    }
+}
+
+
+
+
+
+
+
+
