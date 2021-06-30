@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Lemon', cursive;
+}
 @media  (min-width:1500px) {
      .carousel-inner img{
     /* height: 100vh; */
@@ -101,7 +103,9 @@ button a{
     top: 200%;
     margin-left: 50%;
 }
-
+.navbar button a:hover{
+    color: black;
+}
 
 
 
