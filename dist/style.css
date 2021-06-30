@@ -1,10 +1,13 @@
 body{
     font-family: 'Lemon', cursive;
 }
-@media  (min-width:1500px) {
+@media  (max-width:1300px) {
      .carousel-inner img{
     /* height: 100vh; */
  } 
+ #blog{
+     width: 80%;
+ }
 }
 .box{
     display: flex;
@@ -106,8 +109,20 @@ button a{
 .navbar button a:hover{
     color: black;
 }
+#pho{
+margin-top: 0%;
+}
+.navbar-toggler{
+    display: none;
+}
+.butt{
+    display: none;
+}
 
-
-
+@media (max-width:700px) {
+    .butt{
+        display: block;
+    }
+}
 
 
