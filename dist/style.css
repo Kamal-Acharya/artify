@@ -191,7 +191,7 @@ margin-top: 0%;
     text-decoration: none;
   }
   #p{
-      color: rgb(209, 21, 52);
+      
       animation: kamal ;
       animation-duration: 5s;
       animation-iteration-count: infinite;
@@ -199,11 +199,25 @@ margin-top: 0%;
   }
   @keyframes kamal {
     0%{
-transform: translateX(360px);
+transform: translateX(500px);
     }
     100%{
         transform: translateX(0px);
             }
         }
 
+        #bu {
+            background-color: #61045fbe;
+        }
+     
 
+         #bu:hover {
+           background-position: right center; /* change the direction of the change here */
+           color: #fff;
+           text-decoration: none;
+         }
+        
+ #color{
+    background-color: #F9D423;
+        }
+         
