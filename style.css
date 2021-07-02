@@ -149,3 +149,61 @@ margin-top: 0%;
 }
 
 
+.btn-grad {background-image: linear-gradient(to right, #FF4E50 0%, #F9D423  51%, #FF4E50  100%)}
+.btn-grad {
+   margin-left:83px;
+   margin-top: 20px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ 
+ .grad {background-image: linear-gradient(to right, #5f2c82 0%, #49a09d  51%, #5f2c82  100%)}
+ .grad {
+    margin: 1px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  #p{
+      color: rgb(209, 21, 52);
+      animation: kamal ;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      
+  }
+  @keyframes kamal {
+    0%{
+transform: translateX(360px);
+    }
+    100%{
+        transform: translateX(0px);
+            }
+        }
+
+
