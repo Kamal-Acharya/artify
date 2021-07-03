@@ -20,22 +20,32 @@
     body{
       font-family: 'Lemon', cursive ;
     }
-    #kamal{
+    @media (max-width:600px) {
+      #kamal{
       display: none;
     }
-    #somu{
+    #riya{
       display: none;
     }
+    }
+   
   </style>
   <body>
     <h1 style="font-family: 'Lemon', cursive; text-align: center; color: rgb(16, 37, 54);">Photography Gallery</h1>
     <div class="butt">
 <button href="#kamal" class="btn btn-primary btn-sm my-2"><a href="#kamal"  id="button" > Nature</a></button>
-<button href="#somu" class="btn btn-primary btn-sm my-2"><a href="somu"  id="button2" > food</a></button>
+
+
 
     </div>
+    <div class="butt">
+      <button href="#riya" class="btn btn-primary btn-sm my-2"><a href="#riya"  id="butt" > Nature</a></button>
+      
+      
+      
+          </div>
 <!-- Gallery -->
-<div class="row">
+<div class="row" id="gal">
     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
       <img
         src="1.jpg"
@@ -140,7 +150,7 @@
   <!-- Gallery -->
   <h3 class="text-center">Food</h3>
 
-  <div class="row" id="somu">
+  <div class="row" id="riya">
     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
       <img
         src="food (2).jpg"
@@ -207,14 +217,18 @@
   <script>
     $("#button").click(function(){
       $("#kamal").show();
+      $("#gal").hide();
     $('html,body').animate({
         scrollTo:$("#kamal").offset().top
     },400);
     });
-    $("#button2").click(function(){
-      $("#somu").show();
+
+    $("#butt").click(function(){
+      $("#riya").show();
+      $("#gal").hide();
+      $("#kamal").hide();
     $('html,body').animate({
-        scrollTo:$("#somu").offset().top
+        scrollTo:$("#riya").offset().top
     },400);
     });
   </script>
