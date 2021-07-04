@@ -30,23 +30,22 @@
     #riya{
       display: none;
     }
+  
     }
-   
+   #but3{
+     display: none;
+   }
   </style>
   <body>
     <h1 style="font-family: 'Lemon', cursive; text-align: center; color: rgb(16, 37, 54);">Photography Gallery</h1>
     <div class="butt">
-<button href="#kamal" class="btn btn-primary btn-sm my-2"><a href="#kamal"  id="button" > Nature</a></button>
-
+<button href="#kamal" id="but1" class="btn btn-primary btn-sm my-2"><a href="#kamal"  id="button" > Nature</a></button>
+<button href="#riya" id="but2" class="btn btn-secondary btn-sm my-2"><a href="#riya"  id="butt" > Food</a></button>
+<button href="#gal"id="but3" class="btn btn-secondary btn-sm my-2"><a href="#gal"  id="but" > Photography</a></button>
 
 
     </div>
-    <div class="butt">
-      <button href="#riya" class="btn btn-secondary btn-sm my-2"><a href="#riya"  id="butt" > Food</a></button>
-      
-      
-      
-          </div>
+   
 <!-- Gallery -->
 <div class="row" id="gal">
     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -66,7 +65,7 @@
   
     <div class="col-lg-4 mb-4 mb-lg-0">
       <img
-        src="DSC_02261-min.jpg"
+        src="di.jpg"
         class="w-100 shadow-1-strong rounded mb-4"
         alt=""
       />
@@ -94,11 +93,13 @@
     </div>
     
   </div>
-  <hr class="dropdown-divider">
+
   <!-- Gallery -->
-  <h3 class="text-center">Nature</h3>
+
 
   <div class="row" id="kamal">
+    <hr class="dropdown-divider">
+    <h3 class="text-center" id="nat">Nature</h3>
     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
       <img
         src="nature1 (1).jpg"
@@ -149,11 +150,13 @@
     </div>
     
   </div>
-  <hr class="dropdown-divider">
+
   <!-- Gallery -->
-  <h3 class="text-center">Food</h3>
+
 
   <div class="row" id="riya">
+    <hr class="dropdown-divider">
+    <h3 class="text-center">Food</h3>
     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
       <img
         src="food (2).jpg"
@@ -221,6 +224,8 @@
     $("#button").click(function(){
       $("#kamal").show();
       $("#gal").hide();
+      $("#but1").hide();
+      $("#but3").show();
     $('html,body').animate({
         scrollTo:$("#kamal").offset().top
     },400);
@@ -228,11 +233,28 @@
 
     $("#butt").click(function(){
       $("#riya").show();
+      $("#button").show();
       $("#gal").hide();
+     
+      $("#but2").hide();
+      $("#but1").show();
       $("#kamal").hide();
+      $("#but3").show();
     $('html,body').animate({
         scrollTo:$("#riya").offset().top
     },400);
     });
+    $("#but").click(function(){
+      $("#gal").show();
+      $("#riya").hide();
+      $("#kamal").hide();
+      $("#but3").hide();
+      $("#but1").show();
+      $("#but2").show();
+    $('html,body').animate({
+        scrollTo:$("#gal").offset().top
+    },400);
+    });
+  
   </script>
 </html>
