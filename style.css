@@ -87,13 +87,10 @@ h3 {
 
 
 .card:hover {
-    /* background-color: blue; */
-
-    @keyframes example {
-     0%{
-
-     }
-    }
+  
+transform: translateY(-20px);
+transition: all  ease-out 1s;
+  
 }
 li a{
     text-decoration: none;
@@ -199,6 +196,7 @@ margin-top: 0%;
       animation: kamal ;
       animation-duration: 5s;
       animation-iteration-count: infinite;
+      transition: all ease 3s ;
       
   }
   @keyframes kamal {
